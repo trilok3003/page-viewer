@@ -1,0 +1,20 @@
+:host {
+
+  overflow: auto;
+
+  .page-container {
+    position: relative;
+    border: 1px solid blue;
+    width: 200px;
+    height: 300px;
+    margin: 5% auto;
+  }
+
+  .page-content {
+    position: absolute;
+    box-sizing: content-box;
+    transform-origin: top left;
+    transform: scale(1);
+  }
+
+}

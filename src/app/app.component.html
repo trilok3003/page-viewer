@@ -1,0 +1,14 @@
+<app-page-viewer #pageViewer
+  [htmlContent]="htmlContent"
+  [contentWidth]="documentWidth"
+  [contentHeight]="documentHeight"
+  [(zoomLevel)]="zoomLevel">
+</app-page-viewer>
+
+<button (click)="fitContent()">Fit</button>
+<button (click)="zoomIn()">Zoom In</button>
+<button (click)="zoomOut()">Zoom Out</button>
+
+<input type="range" min="0.2" max="3" step="0.01" [(ngModel)]="zoomLevel">
+
+{{ zoomLevel }}
